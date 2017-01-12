@@ -1,0 +1,20 @@
+<form>
+    <div class="form-group compose-mail">
+        <label for="exampleInputEmail1">To</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" ng-model="newMail.email">
+        <p ng-show="composeEmailValidation">Email is not valid</p>
+    </div>
+    <div class="form-group">
+        <label for="subjectForCompose">Subject</label>
+        <input type="text" class="form-control" placeholder="Subject" id="subjectForCompose" ng-model="newMail.subject">
+    </div>
+    <div class="form-group">
+        <label for="messageForCompose">Message</label>
+        <textarea class="form-control animated" rows="5" id="messageForCompose" ng-model="newMail.message"></textarea>
+    </div>
+    <!--   <div class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <input type="file" id="exampleInputFile">
+  </div> -->
+    <button class="btn btn-default" ng-click="sendNewMail()">Send</button>
+</form>

@@ -1,0 +1,144 @@
+<div class="top-content" ng-show="loginContent" ng-controller="loginCtrl">
+    <div class="inner-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2 text">
+                    <h1><strong>Abhi Mail</strong> </h1>
+                    <div class="description">
+                        <p>
+                            This is a free site where you can <strong>"chat with your friends"</strong> .
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="form-box">
+                        <div class="form-top">
+                            <div class="form-top-left">
+                                <h3>Login to our site</h3>
+                                <p>Enter username and password to log on:</p>
+                                <p><span style="color:black;font-weight:bold" ng-show="wrongCredentials">email or password is incorrect</span></p>
+                            </div>
+                            <div class="form-top-right">
+                                <i class="fa fa-lock"></i>
+                            </div>
+                        </div>
+                        <div class="form-bottom">
+                            <form role="form" method="post" class="form" name="myForm" novalidate>
+                                <div class="form-group">
+                                    <label class="sr-only" for="form-email">Email</label>
+                                    <input type="email" name="email" placeholder="Email..." class="form-email form-control" id="form-email" ng-model="user.email" required>
+                                    <div ng-show="loginValidation">
+                                        <p><span ng-show="myForm.email.$error.required">Email is required.</span></p>
+                                        <p><span ng-show="myForm.email.$error.email">Invalid email address.</span></p>
+                                    </div>
+                                    <!--                                         <p>
+                                            <span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+                                                <span ng-show="myForm.email.$error.required">Email is required.</span>
+                                                <span ng-show="myForm.email.$error.email">Invalid email address.</span>
+                                            </span>
+                                        </p> -->
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="form-password">Password</label>
+                                    <input type="password" name="password" placeholder="Password..." class="form-password form-control" id="form-password" ng-model="user.password" required>
+                                    <div ng-show="loginValidation">
+                                        <p><span ng-show="myForm.password.$error.required">Password is required.</span></p>
+                                    </div>
+                                </div>
+                                <button class="btn" ng-click="login()">Log in!</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="social-login">
+                        <h3>...or login with:</h3>
+                        <div class="social-login-buttons">
+                            <a class="btn btn-link-2" href="#">
+                                <i class="fa fa-facebook"></i> Facebook
+                            </a>
+                            <a class="btn btn-link-2" href="#">
+                                <i class="fa fa-twitter"></i> Twitter
+                            </a>
+                            <a class="btn btn-link-2" href="#">
+                                <i class="fa fa-google-plus"></i> Google Plus
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1 middle-border"></div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-5">
+                    <div class="form-box">
+                        <div class="form-top">
+                            <div class="form-top-left">
+                                <h3>Sign up now</h3>
+                                <p>Fill in the form below to get instant access:</p>
+                            </div>
+                            <div class="form-top-right">
+                                <i class="fa fa-pencil"></i>
+                            </div>
+                        </div>
+                        <div class="form-bottom">
+                            <form role="form" class="form " name="signUpForm" novalidate>
+                                <div class="form-group">
+                                    <label class="sr-only" for="form-first-name">First name</label>
+                                    <input type="text" name="signUpFirstName" placeholder="First name..." class="form-first-name form-control" id="form-first-name" ng-model="newUser.firstName" required>
+                                    <div ng-show="signUpValidation">
+                                        <p><span ng-show="signUpForm.signUpFirstName.$error.required">First Name is required.</span></p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="form-last-name">Last name</label>
+                                    <input type="text" name="signUpLastName" placeholder="Last name..." class="form-last-name form-control" id="form-last-name" ng-model="newUser.lastName" required>
+                                    <div ng-show="signUpValidation">
+                                        <p><span ng-show="signUpForm.signUpLastName.$error.required">Last Name is required.</span></p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="form-email">Email</label>
+                                    <input type="email" name="signUpEmail" placeholder="   Email..." class="form-email form-control" ng-model="newUser.email" required>
+                                    <div ng-show="signUpValidation">
+                                        <p><span ng-show="signUpForm.signUpEmail.$error.required">Email is required.</span><span ng-show="signUpForm.signUpEmail.$error.email">Invalid email address.</span></p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="form-password">Password</label>
+                                    <input type="password" name="signUpPassword" placeholder="Password..." class="form-password form-control" id="form-password" ng-model="newUser.password" required>
+                                    <div ng-show="signUpValidation">
+                                        <p><span ng-show="signUpForm.signUpPassword.$error.required">Password is required.</span></p>
+                                    </div>
+                                </div>
+                                <button class="btn" ng-click="signUp()" >Sign me up!</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <div class="footer-border"></div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signup-modal">Small modal</button>
+<div class="modal fade bs-example-modal-sm" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="alert alert-warning alert-dismissible fade in" role="alert">
+                <strong>Successfully Signed In </strong>
+            </div>
+        </div>
+    </div>
+</div>
+ -->

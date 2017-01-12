@@ -1,0 +1,41 @@
+
+    <div class="main-section">
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>From</th>
+                    <th>Subject</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="info" ng-repeat="x in inbox" data-toggle="modal" data-target="#myModal" ng-click="inboxCall($index)">
+                    <td ng-bind="x.from"></td>
+                    <td ng-bind="x.subject"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">From : {{inboxMsg.from}}</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                   <span>Subject : </span>{{inboxMsg.subject}}
+                </p>
+                <hr>
+                <p><span>Message : </span></p>
+                <p>{{inboxMsg.message}}</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Reply</button>
+            </div>
+        </div>
+    </div>
+

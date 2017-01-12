@@ -1,0 +1,64 @@
+{ 
+   
+    "email" : "abhi@gmail.com", 
+    "inbox" : [
+        {
+            "from" : "avi@gmail.com", 
+            "inboxMsg" : [
+                {
+                    "subject" : "hello", 
+                    "message" : "how are u?"
+                }, 
+                {
+                    "subject" : "leave", 
+                    "message" : "won't be coming tommorow"
+                }
+            ]
+        }, 
+        {
+            "from" : "ravi@gmail.com", 
+            "inboxMsg" : [
+                {
+                    "subject" : "gym", 
+                    "message" : "today we will come early"
+                }, 
+                {
+                    "subject" : "sleep", 
+                    "message" : "always felling sleepy"
+                }
+            ]
+        }
+    ]
+}
+{ 
+   
+    "email" : "anuj@gmail.com", 
+    "inbox" : [
+        {
+            "from" : "avi@gmail.com", 
+            "inboxMsg" : [
+                {
+                    "subject" : "hello", 
+                    "message" : "how are u?"
+                }, 
+                {
+                    "subject" : "leave", 
+                    "message" : "won't be coming tommorow"
+                }
+            ]
+        }, 
+        {
+            "from" : "ravi@gmail.com", 
+            "inboxMsg" : [
+                {
+                    "subject" : "gym", 
+                    "message" : "today we will come early"
+                }, 
+                {
+                    "subject" : "sleep", 
+                    "message" : "always felling sleepy"
+                }
+            ]
+        }
+    ]
+}

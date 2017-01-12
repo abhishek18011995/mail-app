@@ -1,0 +1,47 @@
+{
+
+    "email": "abhi@gmail.com",
+    "inbox": [
+
+        {
+            "from": "avi@gmail.com",
+            "subject": "hello",
+            "message": "how are u?"
+        }, {
+            "from": "avi@gmail.com",
+            "subject": "leave",
+            "message": "won't be coming tommorow"
+        }, {
+            "from": "ravi@gmail.com",
+            "subject": "gym",
+            "message": "today we will come early"
+        }, {
+            "from": "ravi@gmail.com",
+            "subject": "sleep",
+            "message": "always felling sleepy"
+        }
+    ]
+},{
+
+    "email": "anuj@gmail.com",
+    "inbox": [
+
+        {
+            "from": "taher@gmail.com",
+            "subject": "hello",
+            "message": "how are u paltu?"
+        }, {
+            "from": "ravi@gmail.com",
+            "subject": "hola",
+            "message": "i am hola"
+        }, {
+            "from": "ravi@gmail.com",
+            "subject": "gym",
+            "message": "today we will come early"
+        }, {
+            "from": "harsha@gmail.com",
+            "subject": "mkc",
+            "message": "always feeling sleepy"
+        }
+    ]
+}

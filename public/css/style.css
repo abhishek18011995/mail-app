@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.form input {
+    margin-bottom: 10px;
+}
+
+.main-section {
+    margin-top: 1px;
+    background-color: rgba(224, 219, 219, 0.8);
+    border-width: 7px;
+    border-radius: 1px 4px 0 0;
+    -webkit-box-shadow: none;
+}
+
+.nav-tabs>li>a {
+    color: rgba(30, 6, 171, 0.74);
+    cursor: default;
+    background-color: rgba(217, 237, 247, 0.74);
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+}
+
+.table {
+    text-align: initial;
+}
+
+.modal-body>p>span {
+    font-weight: bold;
+}
+
+.modal-body>p {
+    text-align: left;
+}
+
+.logout-btn {
+    float: right;
+    padding-top: 2px;
+}
+
+.logout-btn button {
+    line-height: 0px;
+    float: right;
+    height: 36px;
+}
+
+.compose-mail {
+    margin-top: 15px;
+}
+
+
+.compose-mail p{
+    font-weight: bold;
+    text-align: -webkit-auto;
+    margin-top: 5px;
+    color: #d9edf7;
+}
+.user-name {
+    float: right;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    padding: 0px;
+    margin-right: 13px;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgba(217, 237, 247, 0.81);
+}
